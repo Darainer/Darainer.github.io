@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Hey there"
+date:   2022-10-02 16:04:32 +0200
+categories: jekyll update
+---
+
+This is a space i created with the intent of sharing personal and professional insights with the world
