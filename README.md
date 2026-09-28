@@ -27,7 +27,7 @@ Normal native scrolling; no scroll hijacking. Desktop flywheel illustration stic
 
 ## Validation
 
-HTML structure, internal anchors, local assets and script syntax checked. Motion logic was exercised for active stages, progress boundaries, narrow screens and reduced-motion preferences in a simulated DOM. Visual browser QA remains outstanding because the authoring environment did not provide a browser engine.
+HTML structure, internal anchors, local assets and script syntax checked. Motion logic was exercised for active stages, progress boundaries, narrow screens and reduced-motion preferences in a simulated DOM. After deployment, the desktop homepage, local image loading, engagement options and flywheel navigation were inspected in a cloud browser. Mobile visual QA remains outstanding. A flywheel reading-position threshold was corrected following that inspection.
 
 ## Publishing
 

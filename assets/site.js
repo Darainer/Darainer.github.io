@@ -14,7 +14,7 @@
   document.documentElement.style.setProperty('--nav-offset',Math.ceil(nav.getBoundingClientRect().height+24)+'px');
   scope.style.transform=(!reduce.matches&&window.innerWidth>750)?'translateY('+clamp(y*.06,0,22)+'px)':'';
   const rects=stages.map(e=>e.getBoundingClientRect());
-  const line=window.innerHeight*.55;
+  const line=nav.getBoundingClientRect().height+Math.min(160,window.innerHeight*.18);
   let next=0;rects.forEach((r,i)=>{if(r.top<line)next=i});
   if(next!==active){active=next;count.textContent=String(next+1).padStart(2,'0');name.textContent=labels[next];nodes.forEach((n,i)=>{if(i===next)n.setAttribute('aria-current','step');else n.removeAttribute('aria-current')});stages.forEach((e,i)=>e.classList.toggle('is-active',i===next));}
   const first=rects[0],last=rects[rects.length-1],span=last.bottom-first.top;
